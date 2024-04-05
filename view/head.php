@@ -12,61 +12,65 @@
     <title>Foodinni</title>
 </head>
 <body>
-    <div class="container container-navbar">
-        <nav class="navbar-nav">
-            <ul class="nav justify-content-between">
-                <li class="nav-item d-none d-sm-block">
-                    <a href=".">
-                        <img src="img/logo.svg">
-                    </a>
-                </li>
-                <li class="nav-item d-block d-sm-none">
-                    <a href=".">
-                        <img src="img/icon.png">
-                    </a>
-                </li>
-                <li class="nav-item d-none d-xl-block">
-                    <a href=".">
-                        <div>
-                            Brands
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item d-none d-lg-block">
-                    <a href=".">
-                        <div>
-                            Categories
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item d-none d-lg-block">
-                    <a href=".">
-                        <div>
-                            Discounts
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <form>
-                        <input type="search" placeholder="Search">
-                    </form> 
-                </li>
-                <li class="nav-item d-none d-md-block">
-                    <a href=".">
-                        <div>
-                            My Account &#x1F464;
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item d-block d-md-none">
-                    <a href=".">
-                        <div>
-                            <i class="fa-regular fa-user"></i>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <div class="container-navbar">
+        <div class="container">
+            <nav class="navbar-nav">
+                <ul class="nav justify-content-between">
+                    <li class="nav-item">
+                        <a href="." class="d-none d-sm-block">
+                            <img src="img/logo-large.svg" class="nav-img">
+                        </a>
+                        <a href="." class="d-block d-sm-none">
+                            <img src="img/logo-small.svg" class="nav-img">
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-lg-flex">
+                        <a href="." class="d-none d-xl-block">
+                            <div class="nav-menu">
+                                <p>Brands</p>
+                            </div>
+                        </a>
+                        <a href="." class="d-none d-lg-block">
+                            <div class="nav-menu">
+                                <p>Categories</p>
+                            </div>
+                        </a>
+                        <a href="." class="d-none d-lg-block">
+                            <div class="nav-menu">
+                                <p>Discounts</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <form>
+                            <input type="search" placeholder="Search" class="nav-search">
+                        </form> 
+                    </li>
+                    <li class="nav-item d-flex">
+                        <a href="." class="d-none d-md-block">
+                            <div class="nav-menu">
+                                <p>Account <i class="fa-regular fa-user"></i></p>
+                            </div>
+                        </a>
+                        <a href="." class="d-block d-md-none">
+                            <div class="nav-menu">
+                                <p><i class="fa-regular fa-user"></i></p>
+                            </div>
+                        </a>
+                        <a href="." class="d-none d-xl-block">
+                            <div class="nav-menu">
+                                <p>List <i class="fa-solid fa-list-check"></i></p>
+                            </div>
+                        </a>
+                        <a href="." class="d-block d-xl-none">
+                            <div class="nav-menu">
+                                <p><i class="fa-solid fa-list-check"></i></p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </body>
 </html>
