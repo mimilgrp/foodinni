@@ -6,6 +6,7 @@
     --color6: #ef9b9b;
     
     --white: #fdf3f3;
+    --lgrey: #9c9797;
     --grey: #413f3f;
     --black: #000000;
     --alpha: #00000000;
@@ -19,18 +20,34 @@
 
 div.container-navbar {
     background-color: var(--color2);
+    box-shadow: 0 1px 2px var(--lgrey);
 }
 
 ul.nav {
     padding: 14px 0;
 }
 
-li.nav-item * {
+img.nav-img,
+input.nav-search,
+div.nav-menu {
     margin: 0 2px;
     height: 40px;
 }
 
-li.nav-item div {
+img.nav-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 4px;
+}
+
+input.nav-search {
+    border: 1px solid var(--grey);
+    border-radius: 10vh;
+    padding: 0 14px;
+}
+
+div.nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,21 +58,16 @@ li.nav-item div {
     border-bottom: 2px solid var(--alpha);
 }
 
-li.nav-item div:hover {
-    color: var(--color1);
+div.nav-menu:hover {
     border-color: var(--color1);
 }
 
-li.nav-item img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+div.nav-menu:hover * {
+    color: var(--color1);
 }
 
-input[type="search"] {
-    border: 1px solid var(--grey);
-    border-radius: 10vh;
-    padding: 0 14px;
+div.row {
+    padding: 14px 0;
 }
 
 a {
@@ -63,6 +75,48 @@ a {
     display: flex;
 }
 
-li.nav-item i {
-    display: inline-block;
+p {
+    margin: 0;
+}
+
+i {
+    margin: 0 2px;
+}
+
+h2 {
+    margin: 1em 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+h4 {
+    margin-bottom: 1em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+img.img-ad {
+    width: 100%;
+    border: 1px solid var(--lgrey);
+    border-radius: 5px;
+    box-shadow: 0 0 2px var(--lgrey);
+}
+
+p.p-ref {
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 10px;
+    color: var(--lgrey);
+}
+
+div.div-tile {
+    background-color: var(--color2);
+    border-radius: 5px;
+    box-shadow: 0 0 4px var(--lgrey);
+    height: 100%;
+    padding: 1em;
+    margin: 1em;
+    max-width: 400px;
 }
