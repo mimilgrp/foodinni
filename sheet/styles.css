@@ -45,6 +45,7 @@ input.nav-search {
     border: 1px solid var(--grey);
     border-radius: 10vh;
     padding: 0 14px;
+    width: auto;
 }
 
 div.nav-menu {
