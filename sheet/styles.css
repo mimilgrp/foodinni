@@ -137,14 +137,18 @@ div.tile-item {
     padding: 1rem;
 }
 
-div.car {
+.car {
     border: none;
     overflow: auto;
     white-space: nowrap;
     padding: 0.5rem;
 }
 
-div.car::-webkit-scrollbar {
+.car a {
+    display: inline-block;
+}
+
+.car::-webkit-scrollbar {
     display: none;
 }
 
@@ -155,7 +159,6 @@ div.car::-webkit-scrollbar {
     height: 100%;
     width: 180px;
     padding: 1em;
-    display: inline-block;
     margin: 0.5rem;
     position: relative;
 }
