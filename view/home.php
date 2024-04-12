@@ -8,13 +8,42 @@
         <div class="col">
             <h3>Discounts</h3>
             <div class="car">
-                <div class="car-item">
-                    <img src="">
-                    <p class="name">Hello Hello Hello Hello Hello Hello Hello Hello</p>
-                    <p class="price">Hello</p>
-                    <p class="old-price">Hello</p>
-                    <p class="discount">-50%</p>
-                </div>
+                <a href="item?ean13=" onclick="return false;">
+                    <div class="car-item">
+                        <img src="">
+                        <p class="name">Hello Hello Hello Hello Hello Hello Hello Hello</p>
+                        <p class="price">Hello</p>
+                        <p class="old-price">Hello</p>
+                        <p class="discount">-50%</p>
+                    </div>
+                </a>
+                <a href="item?ean13=" onclick="return false;">
+                    <div class="car-item">
+                        <img src="">
+                        <p class="name">Hello Hello Hello Hello Hello Hello Hello Hello</p>
+                        <p class="price">Hello</p>
+                        <p class="old-price">Hello</p>
+                        <p class="discount">-50%</p>
+                    </div>
+                </a>
+                <a href="item?ean13=" onclick="return false;">
+                    <div class="car-item">
+                        <img src="">
+                        <p class="name">Hello Hello Hello Hello Hello Hello Hello Hello</p>
+                        <p class="price">Hello</p>
+                        <p class="old-price">Hello</p>
+                        <p class="discount">-50%</p>
+                    </div>
+                </a>
+                <a href="item?ean13=" onclick="return false;">
+                    <div class="car-item">
+                        <img src="">
+                        <p class="name">Hello Hello Hello Hello Hello Hello Hello Hello</p>
+                        <p class="price">Hello</p>
+                        <p class="old-price">Hello</p>
+                        <p class="discount">-50%</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
