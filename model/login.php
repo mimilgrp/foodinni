@@ -11,7 +11,7 @@
     
     if ($login) {
         $_SESSION["identifier"] = $_POST["identifier"];
-        $_SESSION["password"] = $_POST["password"];
+        $_SESSION["password"] = isset($_POST["password"]) ? hash("md5", $_POST["password"]) : null;
     }
 
     $customer = getCustomer();

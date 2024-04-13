@@ -3,10 +3,22 @@
         return callAPI("GET", "customer/getCustomer.php");
     }
 
+    function getAllItemsDiscounts() {
+        return callAPI("GET", "public/getAllItemsDiscounts.php");
+    }
+
+    function getAllCategories() {
+        return callAPI("GET", "public/getAllCategories.php");
+    }
+
+    function getAllBrands() {
+        return callAPI("GET", "public/getAllBrands.php");
+    }
+
     function callAPI($method, $path, $params = null)
     {
-        $identifier = $_SESSION["identifier"];
-        $password = $_SESSION["password"];
+        $identifier = $_SESSION["identifier"] ?? "";
+        $password = $_SESSION["password"] ?? "";
         $userpwd = "$identifier:$password";
         $url = "https://api.mimil-grp.eu/foodinni/$path";
         $curl = curl_init();

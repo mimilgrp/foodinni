@@ -6,44 +6,21 @@
     </div>
     <div class="row">
         <div class="col">
+            <?php $itemsdiscounts = getAllItemsDiscounts() ?> 
             <h3>Discounts</h3>
             <div class="car">
-                <a href="item?ean13=" onclick="return false;">
+                <?php foreach ($itemsdiscounts as $itemdiscount): ?>
+                <a href="item?ean13=<?= $itemdiscount->ean13 ?>" onclick="return false;">
                     <div class="car-item">
-                        <img src="">
-                        <p class="name">Hello Hello Hello Hello Hello Hello Hello Hello</p>
-                        <p class="price">Hello</p>
-                        <p class="old-price">Hello</p>
-                        <p class="discount">-50%</p>
+                        <img src="<?= $itemdiscount->image ?>">
+                        <p class="name"><?= $itemdiscount->name ?></p>
+                        <?php $oldprice = $itemdiscount->price - ($itemdiscount->price * $itemdiscount->discount) ?>
+                        <p class="price"><?= sprintf("%.2f", $oldprice) ?>€</p>
+                        <p class="old-price"><?= sprintf("%.2f", $itemdiscount->price) ?>€</p>
+                        <p class="discount">-<?= $itemdiscount->discount * 100 ?>%</p>
                     </div>
                 </a>
-                <a href="item?ean13=" onclick="return false;">
-                    <div class="car-item">
-                        <img src="">
-                        <p class="name">Hello Hello Hello Hello Hello Hello Hello Hello</p>
-                        <p class="price">Hello</p>
-                        <p class="old-price">Hello</p>
-                        <p class="discount">-50%</p>
-                    </div>
-                </a>
-                <a href="item?ean13=" onclick="return false;">
-                    <div class="car-item">
-                        <img src="">
-                        <p class="name">Hello Hello Hello Hello Hello Hello Hello Hello</p>
-                        <p class="price">Hello</p>
-                        <p class="old-price">Hello</p>
-                        <p class="discount">-50%</p>
-                    </div>
-                </a>
-                <a href="item?ean13=" onclick="return false;">
-                    <div class="car-item">
-                        <img src="">
-                        <p class="name">Hello Hello Hello Hello Hello Hello Hello Hello</p>
-                        <p class="price">Hello</p>
-                        <p class="old-price">Hello</p>
-                        <p class="discount">-50%</p>
-                    </div>
-                </a>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
@@ -67,23 +44,33 @@
     </div>
     <div class="row">
         <div class="col">
+            <?php $categories = getAllCategories() ?> 
             <h3>Categories</h3>
             <div class="car">
-                <div class="car-item">
-                    <img src="">
-                    <p class="name">Hello Hello Hello Hello Hello Hello Hello Hello</p>
-                </div>
+                <?php foreach ($categories as $category): ?>
+                <a href="category?name=<?= $category->name ?>" onclick="return false;">
+                    <div class="car-item">
+                        <img src="<?= $category->image ?>">
+                        <p class="name"><?= $category->name ?></p>
+                    </div>
+                </a>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col">
+            <?php $brands = getAllBrands() ?> 
             <h3>Brands</h3>
             <div class="car">
-                <div class="car-item">
-                    <img src="">
-                    <p class="name">Hello Hello Hello Hello Hello Hello Hello Hello</p>
-                </div>
+                <?php foreach ($brands as $brand): ?>
+                <a href="brand?name=<?= $brand->name ?>" onclick="return false;">
+                    <div class="car-item">
+                        <img src="<?= $brand->image ?>">
+                        <p class="name"><?= $brand->name ?></p>
+                    </div>
+                </a>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>

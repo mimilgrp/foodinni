@@ -2,4 +2,5 @@ Options +FollowSymlinks
 DirectorySlash Off
 RewriteEngine on
 
-RewriteRule ^login$                 login.php               [nc,qsa]
+RewriteRule ^login$     login.php   [nc,qsa]
+RewriteRule ^account$   account.php [nc,qsa]

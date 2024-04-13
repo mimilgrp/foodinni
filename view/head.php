@@ -47,12 +47,12 @@
                         </form> 
                     </li>
                     <li class="nav-item d-flex">
-                        <a href="account" class="d-none d-md-block" onclick="return false;">
+                        <a href="account" class="d-none d-md-block">
                             <div class="nav-menu">
                                 <p>Account <i class="fa-regular fa-user"></i></p>
                             </div>
                         </a>
-                        <a href="account" class="d-block d-md-none" onclick="return false;">
+                        <a href="account" class="d-block d-md-none">
                             <div class="nav-menu">
                                 <p><i class="fa-regular fa-user"></i></p>
                             </div>
