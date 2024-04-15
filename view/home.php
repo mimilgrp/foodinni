@@ -28,7 +28,7 @@
         <div class="col d-none d-lg-block">
             <div class="adv">
                 <a href="items?brand=pirkka" onclick="return false;">
-                    <img src="https://images.ctfassets.net/kt8yvydomzor/Gw9ksuMEQQh8vxmO9jXoR/2a6993954c84ce524722f39ac23f244f/Pirkkahintaan_2024_etusivun_paraati_2300x576.jpg">
+                    <img src="img/ad-large.png">
                 </a>
                 <p>Advertising</p>
             </div>
@@ -36,7 +36,7 @@
         <div class="col d-block d-lg-none">
             <div class="adv">
                 <a href="items?brand=pirkka" onclick="return false;">
-                    <img src="https://images.ctfassets.net/kt8yvydomzor/40LnWOkIF1j1jKzTGoLMfe/5444224619c1e4222655486e262921db/Pirkka_brandilahto_omat_digimediat_2024_verkkosivukuva_1440x550.jpg?w=1440&h=550&fit=fill&f=top&q=90&fm=avif">
+                    <img src="img/ad-small.png">
                 </a>
                 <p>Advertising</p>
             </div>
