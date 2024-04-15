@@ -4,3 +4,4 @@ RewriteEngine on
 
 RewriteRule ^login$     login.php   [nc,qsa]
 RewriteRule ^account$   account.php [nc,qsa]
+RewriteRule ^list$      list.php    [nc,qsa]
