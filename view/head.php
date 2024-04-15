@@ -25,19 +25,14 @@
                         </a>
                     </li>
                     <li class="nav-item d-none d-lg-flex">
-                        <a href="items/brand" class="d-none d-xl-block" onclick="return false;">
-                            <div class="nav-menu">
-                                <p>Brands</p>
-                            </div>
-                        </a>
-                        <a href="items/category" class="d-none d-lg-block" onclick="return false;">
-                            <div class="nav-menu">
-                                <p>Categories</p>
-                            </div>
-                        </a>
-                        <a href="items/discount" class="d-none d-lg-block" onclick="return false;">
+                        <a href="items?discount" class="d-none d-xl-block" onclick="return false;">
                             <div class="nav-menu">
                                 <p>Discounts</p>
+                            </div>
+                        </a>
+                        <a href="items" class="d-none d-lg-block" onclick="return false;">
+                            <div class="nav-menu">
+                                <p>Catalogue</p>
                             </div>
                         </a>
                     </li>
@@ -57,14 +52,24 @@
                                 <p><i class="fa-regular fa-user"></i></p>
                             </div>
                         </a>
-                        <a href="account/list" class="d-none d-xl-block" onclick="return false;">
+                        <a href="list" class="d-none d-xl-block" onclick="return false;">
                             <div class="nav-menu">
                                 <p>List <i class="fa-solid fa-list-check"></i></p>
                             </div>
                         </a>
-                        <a href="account/list" class="d-block d-xl-none" onclick="return false;">
+                        <a href="list" class="d-none d-md-block d-xl-none" onclick="return false;">
                             <div class="nav-menu">
                                 <p><i class="fa-solid fa-list-check"></i></p>
+                            </div>
+                        </a>
+                        <a href="receipts" class="d-none d-xl-block" onclick="return false;">
+                            <div class="nav-menu">
+                                <p>Receipts <i class="fa-solid fa-list-check"></i></p>
+                            </div>
+                        </a>
+                        <a href="receipts" class="d-none d-md-block d-xl-none" onclick="return false;">
+                            <div class="nav-menu">
+                                <p><i class="fa-solid fa-cash-register"></i></p>
                             </div>
                         </a>
                     </li>
