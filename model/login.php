@@ -9,17 +9,17 @@
     
     session_start();
     
-    if ($login) {
-        $_SESSION["identifier"] = $_POST["identifier"];
+    if ($login ?? false) {
+        $_SESSION["identifier"] = $_POST["identifier"] ?? null;
         $_SESSION["password"] = isset($_POST["password"]) ? hash("md5", $_POST["password"]) : null;
     }
 
     $customer = getCustomer();
 
-    if ($login) {
+    if ($login ?? false) {
         if (isset($customer->identifier)) {
             matchSession($customer);
-            header("Location: .");
+            header("Location: account");
         }
         else {
             session_unset();
