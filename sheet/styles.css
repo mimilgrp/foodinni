@@ -1,9 +1,9 @@
 :root {
     --color1: #f12b6b;
     --color2: #f6c7c7;
-    --color3: #f45b8c;
-    --color4: #db0e50;
-    --color6: #ef9b9b;
+    /*--color3: #f45b8c;*/
+    /*--color4: #db0e50;*/
+    /*--color6: #ef9b9b;*/
     
     --white: #fdf3f3;
     --lgrey: #9c9797;
@@ -45,11 +45,15 @@ img.nav-img {
     padding: 4px;
 }
 
+.nav-item {
+    display: flex;
+}
+
 input.nav-search {
     border: 1px solid var(--grey);
     border-radius: 10vh;
     padding: 0 14px;
-    width: 190px;
+    width: 250px;
 }
 
 div.nav-menu {
@@ -205,4 +209,9 @@ div.tile-item {
     height: 160px;
     object-position: center;
     object-fit: contain;
+}
+
+.bmc-btn-container {
+    display: flex;
+    justify-content: center;
 }
