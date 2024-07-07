@@ -12,7 +12,7 @@
     --alpha: #00000000;
 }
 
-html * {
+* {
     transition: 0.2s;
     font-family: Geologica, sans-serif;
     color: var(--black);
@@ -53,7 +53,7 @@ input.nav-search {
     border: 1px solid var(--grey);
     border-radius: 10vh;
     padding: 0 14px;
-    width: 250px;
+    width: 230px;
 }
 
 div.nav-menu {
@@ -128,11 +128,12 @@ h4 {
     font-size: 10px;
     color: var(--lgrey);
 }
-
+/*
 div.tile {
     padding: 1rem;
     height: 100%;
 }
+*/
 
 div.tile-item {
     background-color: var(--color2);
@@ -209,6 +210,23 @@ div.tile-item {
     height: 160px;
     object-position: center;
     object-fit: contain;
+}
+
+.tile-area {
+    position: absolute;
+    top: 68px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile {
+    background-color: var(--color2);
+    padding: 3em;
+    box-shadow: 0 1px 2px var(--lgrey);
 }
 
 .bmc-btn-container {

@@ -1,6 +1,6 @@
-<div class="container">
+<div class="tile-area">
     <div class="tile">
-        <h3>Se connecter</h3>
+        <h4>Log in</h4>
         <form action="" method="post">
             <label for="identifier">Identifier</label><br>
             <input type="text" id="identifier" name="identifier" value="<?= $_POST["identifiant"] ?? null ?>"><br>
